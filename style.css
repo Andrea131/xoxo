@@ -1,9 +1,10 @@
 table {
+	margin: auto;
     border-collapse: collapse;
 }
 
 .cell{
-    --w: 10vmin;
+    --w: calc(100vmin / 5);
     width: var(--w);
     height: var(--w);
 
