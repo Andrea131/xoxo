@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+}
+
+.cell{
+    --w: 10vmin;
+    width: var(--w);
+    height: var(--w);
+
+	font-family: monospace;
+	font-size: var(--w);
+	text-align: center;
+	line-height: var(--w);
+
+    border: 2px solid black;
+}
+.cell:first-child{
+    border-left: none
+}
+.cell:last-child{
+    border-right: none
+}
+tr:first-child .cell{
+    border-top: none
+}
+tr:last-child .cell{
+    border-bottom: none
+}
